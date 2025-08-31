@@ -1,0 +1,46 @@
+{
+    "userInfo": {
+        "name": "امیررضا محمدی",
+        "grade": "دوازدهم ریاضی",
+        "avatar": "https://i.pravatar.cc/150?img=32"
+    },
+    "weeklySchedule": [{
+        "day": "شنبه",
+        "subjects": [{
+                "name": "ریاضی",
+                "time": "۸:۰۰ - ۹:۳۰",
+                "teacher": "آقای احمدی"
+            },
+            {
+                "name": "فیزیک",
+                "time": "۱۰:۰۰ - ۱۱:۳۰",
+                "teacher": "آقای رضایی"
+            }
+        ]
+    }],
+    "trips": [{
+        "id": 1,
+        "title": "اردوی علمی موزه",
+        "date": "۱۴۰۲/۰۶/۱۵",
+        "location": "موزه علوم و فناوری",
+        "image": "https://source.unsplash.com/random/600x400/?museum",
+        "description": "بازدید از بخش‌های مختلف موزه علوم و فناوری همراه با توضیحات علمی",
+        "joined": false
+    }],
+    "extraClasses": [{
+        "id": 1,
+        "title": "کلاس تقویتی ریاضی",
+        "teacher": "آقای احمدی",
+        "date": "سه‌شنبه‌ها",
+        "time": "۱۴:۰۰ - ۱۶:۰۰",
+        "description": "کلاس ویژه حل تمرین و رفع اشکال برای امتحانات نهایی",
+        "joined": false
+    }],
+    "announcements": [{
+        "id": 1,
+        "title": "برگزاری آزمون پیشرفت تحصیلی",
+        "date": "۱۴۰۲/۰۶/۱۰",
+        "important": true,
+        "content": "آزمون روز شنبه ساعت ۸ صبح در سالن اصلی مدرسه برگزار خواهد شد."
+    }]
+}

@@ -1,0 +1,534 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    direction: rtl;
+}
+
+
+/* Header Styles */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.backButton {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.headerTitle {
+    color: #1a73e8;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.mobileMenuButton {
+    background: none;
+    border: none;
+    color: #1a73e8;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+/* Info Container */
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.infoGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoItem {
+    display: flex;
+    gap: 10px;
+}
+
+.infoLabel {
+    font-weight: 600;
+    color: #5f6368;
+}
+
+.infoValue {
+    color: #202124;
+}
+
+.mobileClassInfo {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobileInfoItem {
+    display: flex;
+    gap: 8px;
+}
+
+.mobileInfoLabel {
+    font-weight: 600;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.mobileInfoValue {
+    color: #202124;
+    font-size: 14px;
+}
+
+
+/* Filters */
+
+.filtersContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.searchBox {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5f6368;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.filterGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 0 15px;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.filterIcon {
+    color: #5f6368;
+}
+
+.filterSelect,
+.dateInput {
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    width: 100%;
+}
+
+.dateInput {
+    cursor: pointer;
+}
+
+
+/* Mobile Filters */
+
+@media (max-width: 767px) {
+    .filtersContainer {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100%;
+        background: white;
+        z-index: 1000;
+        padding: 20px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+    }
+    .showMobileFilters {
+        right: 0;
+    }
+    .searchBox,
+    .filterGroup {
+        width: 100%;
+    }
+}
+
+
+/* Stats Cards */
+
+.statsContainer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.statCard {
+    flex: 1;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+.presentCard {
+    background: linear-gradient(135deg, #34a853, #2d8e49);
+}
+
+.absentCard {
+    background: linear-gradient(135deg, #ea4335, #d33426);
+}
+
+.totalCard {
+    background: linear-gradient(135deg, #1a73e8, #0d62c9);
+}
+
+.statIconWrapper {
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statIcon {
+    font-size: 1.5rem;
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.statNumber {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.statLabel {
+    font-size: 0.9rem;
+}
+
+.statPercent {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+
+/* Table Container */
+
+.tableContainer {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.tableHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tableTitle {
+    font-size: 1.2rem;
+    color: #1a73e8;
+    margin: 0;
+}
+
+.tableActions {
+    display: flex;
+    gap: 10px;
+}
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.saveButton {
+    background: #1a73e8;
+    color: white;
+}
+
+.printButton {
+    background: #f1f3f4;
+    color: #5f6368;
+}
+
+.exportButton {
+    background: #34a853;
+    color: white;
+}
+
+.actionButton:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+
+/* Table Styles */
+
+.tableWrapper {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableHeaderCell {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    text-align: right;
+    font-weight: 600;
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.tableRow {
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.tableRow:hover {
+    background: #f8f9fa;
+}
+
+.tableCell {
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+.studentName {
+    font-weight: 500;
+}
+
+
+/* Attendance Toggle */
+
+.attendanceToggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggleSwitch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggleInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleSlider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ea4335;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggleSlider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.toggleInput:checked+.toggleSlider {
+    background-color: #34a853;
+}
+
+.toggleInput:checked+.toggleSlider:before {
+    transform: translateX(26px);
+}
+
+.statusText {
+    font-size: 14px;
+}
+
+.present {
+    color: #34a853;
+}
+
+.absent {
+    color: #ea4335;
+}
+
+
+/* Small Button */
+
+.smallButton {
+    padding: 6px 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.smallButton:hover {
+    background: #0d62c9;
+}
+
+
+/* Mobile List */
+
+.mobileList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobileListItem {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileStudentInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobileStudentNumber {
+    color: #5f6368;
+    font-size: 14px;
+}
+
+.mobileStudentName {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.mobileStudentId {
+    color: #5f6368;
+    font-size: 12px;
+}
+
+.mobileActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* No Results */
+
+.noResults {
+    text-align: center;
+    padding: 30px;
+    color: #5f6368;
+}
+
+
+/* Loading */
+
+.loading {
+    text-align: center;
+    padding: 30px;
+    color: #1a73e8;
+}
+
+
+/* Responsive Adjustments */
+
+@media (max-width: 767px) {
+    .container {
+        padding: 15px;
+    }
+    .headerTitle {
+        font-size: 1.2rem;
+    }
+    .statCard {
+        min-width: calc(50% - 8px);
+    }
+    .tableActions {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .actionButton {
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .statCard {
+        min-width: 100%;
+    }
+    .mobileMenuButton {
+        font-size: 1rem;
+    }
+}

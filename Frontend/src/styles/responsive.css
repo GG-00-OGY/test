@@ -1,0 +1,134 @@
+/* استایل‌های ریسپانسیو برای دستگاه‌های مختلف */
+
+
+/* تبلت‌ها و صفحه‌های کوچک (768px و پایین‌تر) */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    /* تنظیمات منو برای موبایل */
+    .navbar-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: var(--secondary-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+    }
+    .navbar-links.active {
+        right: 0;
+    }
+    /* تنظیمات فرم‌ها در موبایل */
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+    .form-control {
+        padding: 8px;
+    }
+    /* تنظیمات جداول در موبایل */
+    .table {
+        font-size: 0.9rem;
+    }
+    .table th,
+    .table td {
+        padding: 8px 10px;
+    }
+    /* تنظیمات کارت‌ها در موبایل */
+    .card {
+        padding: 15px;
+    }
+    /* تنظیمات دکمه‌ها در موبایل */
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* موبایل‌های کوچک (576px و پایین‌تر) */
+
+@media (max-width: 576px) {
+    /* تنظیمات جداول برای نمایش اسکرول افقی */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* تنظیمات فرم‌ها */
+    .form-control {
+        font-size: 0.9rem;
+    }
+    /* تنظیمات کارت‌ها */
+    .card {
+        padding: 10px;
+    }
+    /* تنظیمات تایپوگرافی */
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    /* تنظیمات منوی ادمین برای موبایل */
+    .admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+    .sidebar-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar-menu li {
+        flex: 1 0 auto;
+    }
+    .menu-section {
+        display: none;
+    }
+}
+
+
+/* دستگاه‌های بسیار کوچک (360px و پایین‌تر) */
+
+@media (max-width: 360px) {
+    .container {
+        padding: 0 5px;
+    }
+    .btn {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+    .form-control {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    .table th,
+    .table td {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* حالت پرینت */
+
+@media print {
+    .navbar,
+    .admin-sidebar,
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background: none;
+        color: #000;
+    }
+    .table {
+        page-break-inside: avoid;
+    }
+}
